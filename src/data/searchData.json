@@ -1,0 +1,12 @@
+{
+  "validSearches": [
+    "cream",
+    "eye",
+    "skin",
+    "perfum"
+  ],
+  "invalidSearches": [
+    "xxxx1234",
+    "123"
+  ]
+}
