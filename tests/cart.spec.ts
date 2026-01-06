@@ -4,6 +4,7 @@ import { ShoppingCartPage } from '../src/pages/ShoppingCartPage';
 
 test('Adicionar produto ao carrinho', async ({ page }) => {
   const landingPage = new LandingPage(page);
+  const shoppingCartPage = new ShoppingCartPage(page);
 
   await landingPage.open();
 
@@ -11,16 +12,6 @@ test('Adicionar produto ao carrinho', async ({ page }) => {
 
   await landingPage.openShoppingCart();
 
-  //await ShoppingCartPage.   validar nome da página: Shopping Cart
-
-  //await ShoppingCartPage.validateCartCounter('1');
-
-  //await ShoppingCartPage.validateProductIsPresent();
-
-  
-
-
-  //await ShoppingCartPage.validateCartCounterEnd('2'); 
-
+  await shoppingCartPage.validateTotalIsVisible();
 
 });
